@@ -14,13 +14,11 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
     @Bean
-    @Qualifier("Island2")
     public static Island2 getIsland(Wood3 wood) {
         return new Island2(wood);
     }
 
     @Bean
-    @Qualifier("Egg6")
     public static Egg6 getEgg(Needle7 needle) {
         return new Egg6(needle);
     }
